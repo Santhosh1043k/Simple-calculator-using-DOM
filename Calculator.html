@@ -1,0 +1,37 @@
+
+<input  id="num1" placeholder="number1">
+<br>
+<input  id="num2" placeholder="number2">
+<br>
+<button onclick="add()">ToAdd</button>
+<button onclick="sub()">ToSub</button>
+
+<br>
+<br>
+<br>
+<box>
+<button id="result">Answer</button>
+</box>
+
+<script>
+   var box1=document.getElementById("num1")
+   var box2=document.getElementById("num2")
+   var result=document.getElementById("result")
+    
+
+   function add(){
+    var num1value=Number(box1.value)
+    var num2value=Number(box2.value)
+    var total=num1value + num2value
+    
+    result.textContent="Your Answer is "+ total
+   }
+   
+   function sub(){
+    var num1value=Number(box1.value)
+    var num2value=Number(box2.value)
+    var total=num1value - num2value
+    
+    result.textContent="Your Answer is "+ total
+   }
+</script>
